@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E4E8BF1F2875B20091E7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E8BE1F2875B20091E7AB /* AppDelegate.swift */; };
+		63E4E8C41F2875B20091E7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4E8C21F2875B20091E7AB /* Main.storyboard */; };
+		63E4E8C61F2875B20091E7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4E8C51F2875B20091E7AB /* Assets.xcassets */; };
+		63E4E8C91F2875B20091E7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4E8C71F2875B20091E7AB /* LaunchScreen.storyboard */; };
+		63E4E8D11F287B8E0091E7AB /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E8D01F287B8E0091E7AB /* UsersViewController.swift */; };
+		63E4E8D31F287B9F0091E7AB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E8D21F287B9F0091E7AB /* ProfileViewController.swift */; };
+		63E4E8D51F287BD70091E7AB /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E8D41F287BD70091E7AB /* UserTableViewController.swift */; };
+		63E4E8D71F287F0B0091E7AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E8D61F287F0B0091E7AB /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63E4E8BB1F2875B20091E7AB /* Gravity Sample Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gravity Sample Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E4E8BE1F2875B20091E7AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63E4E8C31F2875B20091E7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63E4E8C51F2875B20091E7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63E4E8C81F2875B20091E7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63E4E8CA1F2875B20091E7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E4E8D01F287B8E0091E7AB /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		63E4E8D21F287B9F0091E7AB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		63E4E8D41F287BD70091E7AB /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		63E4E8D61F287F0B0091E7AB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E4E8B81F2875B20091E7AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E4E8B21F2875B20091E7AB = {
+			isa = PBXGroup;
+			children = (
+				63E4E8BD1F2875B20091E7AB /* Gravity Sample Database */,
+				63E4E8BC1F2875B20091E7AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E4E8BC1F2875B20091E7AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E4E8BB1F2875B20091E7AB /* Gravity Sample Database.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E4E8BD1F2875B20091E7AB /* Gravity Sample Database */ = {
+			isa = PBXGroup;
+			children = (
+				63E4E8D61F287F0B0091E7AB /* LoginViewController.swift */,
+				63E4E8BE1F2875B20091E7AB /* AppDelegate.swift */,
+				63E4E8D01F287B8E0091E7AB /* UsersViewController.swift */,
+				63E4E8D21F287B9F0091E7AB /* ProfileViewController.swift */,
+				63E4E8D41F287BD70091E7AB /* UserTableViewController.swift */,
+				63E4E8C21F2875B20091E7AB /* Main.storyboard */,
+				63E4E8C51F2875B20091E7AB /* Assets.xcassets */,
+				63E4E8C71F2875B20091E7AB /* LaunchScreen.storyboard */,
+				63E4E8CA1F2875B20091E7AB /* Info.plist */,
+			);
+			path = "Gravity Sample Database";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E4E8BA1F2875B20091E7AB /* Gravity Sample Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E4E8CD1F2875B20091E7AB /* Build configuration list for PBXNativeTarget "Gravity Sample Database" */;
+			buildPhases = (
+				63E4E8B71F2875B20091E7AB /* Sources */,
+				63E4E8B81F2875B20091E7AB /* Frameworks */,
+				63E4E8B91F2875B20091E7AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gravity Sample Database";
+			productName = "Gravity Sample Database";
+			productReference = 63E4E8BB1F2875B20091E7AB /* Gravity Sample Database.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E4E8B31F2875B20091E7AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "David Brown";
+				TargetAttributes = {
+					63E4E8BA1F2875B20091E7AB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X62Z6HXVND;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63E4E8B61F2875B20091E7AB /* Build configuration list for PBXProject "Gravity Sample Database" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63E4E8B21F2875B20091E7AB;
+			productRefGroup = 63E4E8BC1F2875B20091E7AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E4E8BA1F2875B20091E7AB /* Gravity Sample Database */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E4E8B91F2875B20091E7AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E4E8C91F2875B20091E7AB /* LaunchScreen.storyboard in Resources */,
+				63E4E8C61F2875B20091E7AB /* Assets.xcassets in Resources */,
+				63E4E8C41F2875B20091E7AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E4E8B71F2875B20091E7AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E4E8D51F287BD70091E7AB /* UserTableViewController.swift in Sources */,
+				63E4E8D11F287B8E0091E7AB /* UsersViewController.swift in Sources */,
+				63E4E8D31F287B9F0091E7AB /* ProfileViewController.swift in Sources */,
+				63E4E8D71F287F0B0091E7AB /* LoginViewController.swift in Sources */,
+				63E4E8BF1F2875B20091E7AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63E4E8C21F2875B20091E7AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E4E8C31F2875B20091E7AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63E4E8C71F2875B20091E7AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E4E8C81F2875B20091E7AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E4E8CB1F2875B20091E7AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63E4E8CC1F2875B20091E7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63E4E8CE1F2875B20091E7AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X62Z6HXVND;
+				INFOPLIST_FILE = "Gravity Sample Database/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Brown.Gravity-Sample-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		63E4E8CF1F2875B20091E7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X62Z6HXVND;
+				INFOPLIST_FILE = "Gravity Sample Database/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Brown.Gravity-Sample-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E4E8B61F2875B20091E7AB /* Build configuration list for PBXProject "Gravity Sample Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E4E8CB1F2875B20091E7AB /* Debug */,
+				63E4E8CC1F2875B20091E7AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E4E8CD1F2875B20091E7AB /* Build configuration list for PBXNativeTarget "Gravity Sample Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E4E8CE1F2875B20091E7AB /* Debug */,
+				63E4E8CF1F2875B20091E7AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E4E8B31F2875B20091E7AB /* Project object */;
+}
