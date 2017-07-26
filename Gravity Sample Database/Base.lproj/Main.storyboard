@@ -144,10 +144,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sLY-DK-qMM">
+                                <rect key="frame" x="16" y="214" width="343" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="396" id="uCF-qu-GvX"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sLY-DK-qMM" firstAttribute="leading" secondItem="ZTa-Zk-6Jg" secondAttribute="leadingMargin" id="1bm-rC-aTT"/>
+                            <constraint firstItem="b58-LK-e2S" firstAttribute="top" secondItem="sLY-DK-qMM" secondAttribute="bottom" constant="8" symbolic="YES" id="9s0-8C-pOX"/>
+                            <constraint firstItem="sLY-DK-qMM" firstAttribute="trailing" secondItem="ZTa-Zk-6Jg" secondAttribute="trailingMargin" id="Ove-AV-sFa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gravity" id="u8z-a5-nyV"/>
+                    <connections>
+                        <outlet property="userTable" destination="sLY-DK-qMM" id="aog-ow-Gea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPd-kS-ego" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
