@@ -78,13 +78,18 @@ class UserTableViewController: UITableViewController {
                  tableView.deleteRows(at: [indexPath.row], with: UITableViewRowAnimation)
                  print("not male")
                  */
+               
+                /// code gets to this point
                 print("checkpoint")
 
-                let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (rowAction: UITableViewRowAction, indexPath: IndexPath) -> Void in
+          //    let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (rowAction: UITableViewRowAction, indexPath: IndexPath) -> Void in
+                func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+
                     
+                    ///code is not getting to here
                     print("Deleted")
-                    
-                    self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+
+                    self.tableView.deleteRows(at: [indexPath], with: .automatic)
                     self.tableView.reloadData()
                 }
             }
