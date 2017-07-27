@@ -31,6 +31,7 @@ class FilterViewController: UIViewController {
             
             maleButton = 1
         }
+        print(maleButton)
     }
     
     

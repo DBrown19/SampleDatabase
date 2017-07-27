@@ -17,6 +17,7 @@ class User: Glossy, Decodable {
     var userEmail: String?
     var userEngagement: Int?
     var userFirstName: String?
+    var userGender: String?
     var userHonesty: Int?
     var userIncome: Int?
     var userKnowledge: Int?
@@ -38,26 +39,11 @@ class User: Glossy, Decodable {
     
     required init?(json: JSON) {
         
-        var userKey: String?
-        var userAge: Int?
-        var userEmail: String?
-        var userEngagement: Int?
-        var userFirstName: String?
-        var userHonesty: Int?
-        var userIncome: Int?
-        var userKnowledge: Int?
-        var userLastName: String?
-        var userOccupation: String?
-        var userPicture: String?
-        var userRace: String?
-        var userTestName: String?
-        var userTotal: Int?
-        var userTestType: String?
-        
         self.userAge = "age" <~~ json
         self.userEmail = "email" <~~ json
         self.userEngagement = "engagement" <~~ json
         self.userFirstName = "first_name" <~~ json
+        self.userGender = "gender" <~~ json
         self.userHonesty = "honest" <~~ json
         self.userIncome = "income" <~~ json
         self.userKnowledge = "knowledge" <~~ json

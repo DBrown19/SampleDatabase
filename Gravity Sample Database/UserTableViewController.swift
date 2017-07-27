@@ -14,9 +14,12 @@ import Gloss
 
 class UserTableViewController: UITableViewController {
     
+    var user: User?
     var users: [User] = []
     var myIndex = 0
     var maleFilter: Int?
+   // let cell = UITableViewCell()
+ //   let indexPath = tableView.indexPath
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,25 +36,62 @@ class UserTableViewController: UITableViewController {
                         self.users.append(user!)
                         self.tableView.reloadData()
                     }
-                    
                 }
-                
             }
-            
         })
-    
-        
-        if maleFilter == 1 {
-            print("enabled")
-        } else {
-            print("not enabled")
-        }
-     
     }
-    
+        
+        
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        /*
+        ///THIS PART
+        if maleFilter == 1 {
+            
+            self.tableView.reloadData()
+            if user?.userGender == "Male" {
+                self.users.append(user!)
+                self.tableView.reloadData()
+            } else {
+                users.remove(at: indexPath)
+               // users.removeAtIndex(deletionIndexPath.row)
+                tableView.deleteRows(at: users[(indexPath?.row)!], with: UITableViewRowAnimation)
+                print("not male")
+            }
+        } else {
+            print("Male filter not applied")
+        }
+ */
+        
+        print(maleFilter)
+        if maleFilter == 1 {
+            self.tableView.reloadData()
+            if user?.userGender == "Male" {
+                print ("male")
+              //  self.users.append(user!)
+               // self.tableView.reloadData()
+            } else {
+                /*
+                 users.remove(at: indexPath)
+                 // users.removeAtIndex(deletionIndexPath.row)
+                 tableView.deleteRows(at: [indexPath.row], with: UITableViewRowAnimation)
+                 print("not male")
+                 */
+                print("checkpoint")
+
+                let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (rowAction: UITableViewRowAction, indexPath: IndexPath) -> Void in
+                    
+                    print("Deleted")
+                    
+                    self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+                    self.tableView.reloadData()
+                }
+            }
+        } else {
+            print("Male filter not applied")
+        }
+        self.tableView.reloadData()
     }
     
     
@@ -61,11 +101,11 @@ class UserTableViewController: UITableViewController {
             let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPath(for: cell)
             let selectedUser = users[(indexPath?.row)!]
-            
             let infoVC = segue.destination as! UserInfoViewController
             infoVC.user = selectedUser
         }
-        
+    
+
     }
  
     
@@ -89,7 +129,7 @@ class UserTableViewController: UITableViewController {
         
     
         
-        // var fullName = name1! + namespace + name2!
+        var fullName = name1! + namespace + name2!
         //    print(fullName)
 
 
@@ -101,15 +141,21 @@ class UserTableViewController: UITableViewController {
             fullName = name1! + namespace + name2! + " (D)"
         }
         */
-       // print(fullName)
         
-      //  cell.textLabel?.text = fullName
-        cell.textLabel?.text = users[indexPath.row].userFirstName
+        
+        cell.textLabel?.text = fullName
         cell.detailTextLabel?.text = users[indexPath.row].userOccupation
         
         return cell
+        
+
+        
     }
  
+    
+    
+
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
