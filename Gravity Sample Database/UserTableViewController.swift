@@ -12,10 +12,12 @@ import UIKit
 import Alamofire
 import Gloss
 
-class SenateTableViewController: UITableViewController {
+class UserTableViewController: UITableViewController {
     
     var users: [User] = []
     var myIndex = 0
+    var maleFilter: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Alamofire.request("https://gravity-sample-database.firebaseio.com/users.json").responseJSON(completionHandler: {
@@ -38,7 +40,12 @@ class SenateTableViewController: UITableViewController {
             
         })
         
-        print("123test")
+        
+        if maleFilter == 1 {
+            print("enabled")
+        } else {
+            print("not enabled")
+        }
      
     }
     
@@ -47,20 +54,20 @@ class SenateTableViewController: UITableViewController {
         
     }
     
-    /*
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "segue1" {
+        if segue.identifier == "userTableToInfo" {
             let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPath(for: cell)
-            let selectedSenator = senators[(indexPath?.row)!]
+            let selectedUser = users[(indexPath?.row)!]
             
-            let infoVC = segue.destination as! InfoViewController
-            infoVC.senator = selectedSenator
+            let infoVC = segue.destination as! UserInfoViewController
+            infoVC.user = selectedUser
         }
         
     }
-    */
+ 
     
     // MARK: - Table view data source
     
@@ -80,8 +87,10 @@ class SenateTableViewController: UITableViewController {
         let namespace = " "
         let name2 = users[indexPath.row].userLastName
         
-       // var fullName = name1! + namespace + name2!
-    //    print(fullName)
+    
+        
+        // var fullName = name1! + namespace + name2!
+        //    print(fullName)
 
 
      /*
@@ -109,7 +118,7 @@ class SenateTableViewController: UITableViewController {
         
         let cell = tableView.cellForRow(at: indexPath)
         
-        performSegue(withIdentifier: "segue1", sender: cell)
+        performSegue(withIdentifier: "userTableToInfo", sender: cell)
         
     }
     

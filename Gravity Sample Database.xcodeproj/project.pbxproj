@@ -22,6 +22,9 @@
 		63E4E9051F28C7F30091E7AB /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E9041F28C7F30091E7AB /* UserTableViewController.swift */; };
 		63E4E9091F29BCC10091E7AB /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E9081F29BCC10091E7AB /* UserTableViewCell.swift */; };
 		63E4E90B1F29BEB70091E7AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E90A1F29BEB70091E7AB /* User.swift */; };
+		63E4E90D1F29D14F0091E7AB /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E90C1F29D14F0091E7AB /* UserInfoViewController.swift */; };
+		63E4E90F1F29D1E40091E7AB /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E90E1F29D1E40091E7AB /* FilterViewController.swift */; };
+		63E4E9111F29E0660091E7AB /* UserNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4E9101F29E0660091E7AB /* UserNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		63E4E9041F28C7F30091E7AB /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 		63E4E9081F29BCC10091E7AB /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		63E4E90A1F29BEB70091E7AB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63E4E90C1F29D14F0091E7AB /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		63E4E90E1F29D1E40091E7AB /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		63E4E9101F29E0660091E7AB /* UserNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNavigationViewController.swift; sourceTree = "<group>"; };
 		C780430290EA5738B71CD929 /* Pods_Gravity_Sample_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gravity_Sample_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,6 +67,7 @@
 		63E4E8B21F2875B20091E7AB = {
 			isa = PBXGroup;
 			children = (
+				63E4E9101F29E0660091E7AB /* UserNavigationViewController.swift */,
 				63E4E8BD1F2875B20091E7AB /* Gravity Sample Database */,
 				63E4E8BC1F2875B20091E7AB /* Products */,
 				C22598BF8E6BAEBD35FF611A /* Pods */,
@@ -88,6 +95,8 @@
 				63E4E9081F29BCC10091E7AB /* UserTableViewCell.swift */,
 				63E4E8D21F287B9F0091E7AB /* ProfileViewController.swift */,
 				63E4E8C21F2875B20091E7AB /* Main.storyboard */,
+				63E4E90E1F29D1E40091E7AB /* FilterViewController.swift */,
+				63E4E90C1F29D14F0091E7AB /* UserInfoViewController.swift */,
 				63E4E8C51F2875B20091E7AB /* Assets.xcassets */,
 				63E4E8C71F2875B20091E7AB /* LaunchScreen.storyboard */,
 				63E4E8D81F28865D0091E7AB /* UsersUITableView.swift */,
@@ -259,11 +268,14 @@
 				63E4E8DF1F28918A0091E7AB /* Senator.swift in Sources */,
 				63E4E8D11F287B8E0091E7AB /* UsersViewController.swift in Sources */,
 				63E4E8D31F287B9F0091E7AB /* ProfileViewController.swift in Sources */,
+				63E4E90D1F29D14F0091E7AB /* UserInfoViewController.swift in Sources */,
+				63E4E90F1F29D1E40091E7AB /* FilterViewController.swift in Sources */,
 				63E4E9091F29BCC10091E7AB /* UserTableViewCell.swift in Sources */,
 				63E4E90B1F29BEB70091E7AB /* User.swift in Sources */,
 				63E4E9051F28C7F30091E7AB /* UserTableViewController.swift in Sources */,
 				63E4E8D71F287F0B0091E7AB /* LoginViewController.swift in Sources */,
 				63E4E8BF1F2875B20091E7AB /* AppDelegate.swift in Sources */,
+				63E4E9111F29E0660091E7AB /* UserNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
