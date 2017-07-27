@@ -6,90 +6,111 @@
 //  Copyright © 2017 David Brown. All rights reserved.
 //
 
+
+
 import UIKit
+import Alamofire
+import Gloss
 
-class UserTableViewController: UITableViewController {
-
+class SenateTableViewController: UITableViewController {
+    
+    var users: [User] = []
+    var myIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        Alamofire.request("https://gravity-sample-database.firebaseio.com/users.json").responseJSON(completionHandler: {
+            response in
+            
+            if let usersDictionary = response.result.value as? JSON {
+                
+                for (key, value) in usersDictionary {
+                    
+                    if let usersDictionary = value as? JSON {
+                        var user = User(json: usersDictionary)
+                        user?.userKey = key
+                        self.users.append(user!)
+                        self.tableView.reloadData()
+                    }
+                    
+                }
+                
+            }
+            
+        })
+        
+        print("123test")
+     
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+    
     /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "segue1" {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)
+            let selectedSenator = senators[(indexPath?.row)!]
+            
+            let infoVC = segue.destination as! InfoViewController
+            infoVC.senator = selectedSenator
+        }
+        
+    }
+    */
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return users.count
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        
         // Configure the cell...
+        let name1 = users[indexPath.row].userFirstName
+        let namespace = " "
+        let name2 = users[indexPath.row].userLastName
+        
+       // var fullName = name1! + namespace + name2!
+    //    print(fullName)
 
+
+     /*
+        // Trying to use this to indicate party by manipulating string
+        if users[indexPath.row].senateParty == "republican" {
+            fullName = name1! + namespace + name2! + " (R)"
+        } else {
+            fullName = name1! + namespace + name2! + " (D)"
+        }
+        */
+       // print(fullName)
+        
+      //  cell.textLabel?.text = fullName
+        cell.textLabel?.text = users[indexPath.row].userFirstName
+        cell.detailTextLabel?.text = users[indexPath.row].userOccupation
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+ 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        
+        print("this works")
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        performSegue(withIdentifier: "segue1", sender: cell)
+        
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

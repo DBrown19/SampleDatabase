@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Gravity Sample Database/UsersViewController.swift"
-            timestampString = "522753486.500956"
+            timestampString = "522766600.384745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "43"
+            endingLineNumber = "43">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,12 +24,130 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Gravity Sample Database/UsersViewController.swift"
-            timestampString = "522753486.500956"
+            timestampString = "522766600.384745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "29"
+            endingLineNumber = "29">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gravity Sample Database/UsersViewController.swift"
+            timestampString = "522766600.384745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gravity_Sample_Database.UsersViewController.userTable.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "Gravity Sample Database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/David/Desktop/CMC/Summer%202/Gravity/Gravity%20Sample%20Database/Gravity%20Sample%20Database/UsersViewController.swift"
+                  timestampString = "522764316.8349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gravity_Sample_Database.UsersViewController.userTable.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "Gravity Sample Database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/David/Desktop/CMC/Summer%202/Gravity/Gravity%20Sample%20Database/Gravity%20Sample%20Database/UsersViewController.swift"
+                  timestampString = "522764316.838276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gravity_Sample_Database.UsersViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Gravity_Sample_Database.UsersViewController"
+                  moduleName = "Gravity Sample Database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/David/Desktop/CMC/Summer%202/Gravity/Gravity%20Sample%20Database/Gravity%20Sample%20Database/UsersViewController.swift"
+                  timestampString = "522764316.839666"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Gravity_Sample_Database.UsersViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Gravity_Sample_Database.UsersViewController&gt;"
+                  moduleName = "Gravity Sample Database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/David/Desktop/CMC/Summer%202/Gravity/Gravity%20Sample%20Database/Gravity%20Sample%20Database/UsersViewController.swift"
+                  timestampString = "522764316.840986"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gravity Sample Database/UsersViewController.swift"
+            timestampString = "522766600.384745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gravity Sample Database/UsersViewController.swift"
+            timestampString = "522766647.967888"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gravity Sample Database/User.swift"
+            timestampString = "522831675.043784"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

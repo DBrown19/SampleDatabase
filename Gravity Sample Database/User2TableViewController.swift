@@ -1,30 +1,20 @@
 //
-//  UsersViewController.swift
+//  User2TableViewController.swift
 //  Gravity Sample Database
 //
-//  Created by David Brown on 7/26/17.
+//  Created by David Brown on 7/27/17.
 //  Copyright © 2017 David Brown. All rights reserved.
 //
 
-/*
+
 import UIKit
 import Alamofire
 import Gloss
-import FirebaseDatabase
-import Firebase
 
-class UsersViewController: UIViewController {
-
-    @IBOutlet weak var userTable: UITableView!
+class SenateTableViewController: UITableViewController {
     
-    
-    
-     
     var senators: [Senator] = []
     var myIndex = 0
-    let ref = Database.database().reference().child("Senators")
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +29,7 @@ class UsersViewController: UIViewController {
                         var senator = Senator(json: senatorDictionary)
                         senator?.key = key
                         self.senators.append(senator!)
-                       // self.userTable.reloadData()
+                        self.tableView.reloadData()
                     }
                     
                 }
@@ -48,19 +38,41 @@ class UsersViewController: UIViewController {
             
         })
         
+        print("123test")
+        print([Senator]())
+        print(senators)
     }
-
     
-     func numberOfSections(in tableView: UITableView) -> Int {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "segue1" {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)
+            let selectedSenator = senators[(indexPath?.row)!]
+            
+            let infoVC = segue.destination as! InfoViewController
+            infoVC.senator = selectedSenator
+        }
+        
+    }
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return senators.count
     }
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = userTable.dequeueReusableCell(withIdentifier: "senatorCell", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "senatorCell", for: indexPath)
         
         // Configure the cell...
         let name1 = senators[indexPath.row].firstName
@@ -77,8 +89,6 @@ class UsersViewController: UIViewController {
         }
         
         print(fullName)
-        print("2test")
-
         
         cell.textLabel?.text = fullName
         cell.detailTextLabel?.text = senators[indexPath.row].stateName
@@ -86,13 +96,7 @@ class UsersViewController: UIViewController {
         return cell
     }
     
-   
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         
         print("this works")
@@ -102,18 +106,5 @@ class UsersViewController: UIViewController {
         performSegue(withIdentifier: "segue1", sender: cell)
         
     }
-     
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
- */
-
+    
 }
- */
