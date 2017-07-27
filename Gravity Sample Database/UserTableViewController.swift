@@ -39,7 +39,7 @@ class UserTableViewController: UITableViewController {
             }
             
         })
-        
+    
         
         if maleFilter == 1 {
             print("enabled")

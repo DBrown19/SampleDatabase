@@ -7,18 +7,44 @@
 //
 
 import UIKit
+import Alamofire
+import Gloss
+import AlamofireImage
 
 class UserInfoViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
     
     var user: User?
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        Alamofire.request("https://gravity-sample-database.firebaseio.com/users.json").responseJSON(completionHandler: {
+            response in
+            
+            if let usersDictionary = response.result.value as? JSON {
+                
+                for (key, value) in usersDictionary {
+                    
+                    if let usersDictionary = value as? JSON {
+                        var user = User(json: usersDictionary)
+                        user?.userKey = key
+                       
+                    }
+                    
+                }
+                
+            }
+            
+        })
+        
+        let fullName = (user?.userFirstName)! + " " + (user?.userLastName)!
+        
+        nameLabel.text = fullName
     }
-
+    
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
